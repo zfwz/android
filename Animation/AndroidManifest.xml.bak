@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".TweenAni"
-            android:label="zhangfeng" >
+            android:label="@string/title_activity_tween_ani" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
