@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Animation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_tween_ani">动画测试</string>
+	<string name="scale">缩放渐变</string>
+	<string name="rotate">旋转渐变</string>
+	<string name="alpha">透明渐变</string>
+	<string name="translate">移动渐变</string>
+</resources>
