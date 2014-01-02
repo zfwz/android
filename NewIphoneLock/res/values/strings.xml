@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">IPhoneLock</string>
+    
+    
+	<string name="charging">Charging</string>
+	<string name="charging_full">Be filled</string>
+	<string name="slide_to_unlock">＞Slider to unlock</string>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.golddragon.view.IPhoneLockView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 相机底景 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="15dip"
+                android:src="@drawable/camera_pic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip"
+                android:src="@drawable/camera_middle" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 相机底景 end -->
+
+
+    <!-- 锁屏主界面 -->
+
+    <com.golddragon.view.MyVerticalScrollView
+        android:id="@+id/verticalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.golddragon.view.MyHorizontalScrollView
+                android:id="@+id/hscroll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/lock_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <!-- 时间日期 -->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dip" >
+
+                        <com.golddragon.view.MyDigitalClock
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true" >
+
+                            <TextView
+                                android:id="@+id/timeDisplay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dip"
+                                android:singleLine="true"
+                                android:textColor="@android:color/white"
+                                android:textSize="100sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/am_pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/timeDisplay"
+                                android:layout_marginLeft="8dip"
+                                android:layout_toRightOf="@id/timeDisplay"
+                                android:singleLine="true" 
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                />
+                        </com.golddragon.view.MyDigitalClock>
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <!-- 时间日期 end -->
+
+
+                    <!-- 电池 -->
+
+                    <TextView
+                        android:id="@+id/battery_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                    <!-- 电池end -->
+
+
+                    <!-- 滚动文字 -->
+
+                    <TextView
+                        android:id="@+id/tv_slide_unlock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="160dip"
+                        android:text="@string/slide_to_unlock"
+                        android:textColor="@android:color/darker_gray" />
+                    <!-- 滚动文字 end -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="55dip"
+                        android:src="@drawable/up" />
+
+                    <ImageView
+                        android:id="@+id/open_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="50dip"
+                        android:layout_marginRight="20dip"
+                        android:src="@drawable/camera" />
+                </RelativeLayout>
+            </com.golddragon.view.MyHorizontalScrollView>
+        </RelativeLayout>
+    </com.golddragon.view.MyVerticalScrollView>
+    <!-- 锁屏主界面 end -->
+
+</com.golddragon.view.IPhoneLockView>
