@@ -22,7 +22,7 @@ import com.golddragon.tools.BatteryObserver.OnBatteryChange;
 import com.golddragon.view.IPhoneLockView;
 
 /**
- * 主activity张锋
+ * 主activity
  * 
  * @author zhangfeng
  * 
